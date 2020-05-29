@@ -1,0 +1,23 @@
+# action.yml
+name: 'register ip address to xrea'
+description: 'this action register the ip address to xrea in order to enable acess to xrea from actions'
+branding:
+  icon: 'plus-circle'
+inputs:
+  xrea_account:
+    description: 'account name of xrea'
+    required: true
+  xrea_server:
+    description 'server domain of xrea (e.g. s1000.xrea.com)'
+    required: true
+  xrea_api_key:
+    description 'api key for xrea'
+    required: true
+outputs:
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - "${{ inputs.xrea_account }}"
+    - "${{ inputs.xrea_server }}"
+    - "${{ inputs.xrea_api_key }}"
