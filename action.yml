@@ -8,10 +8,10 @@ inputs:
     description: 'account name of xrea'
     required: true
   xrea_server:
-    description 'server domain of xrea (e.g. s1000.xrea.com)'
+    description: 'server domain of xrea (e.g. s1000.xrea.com)'
     required: true
   xrea_api_key:
-    description 'api key for xrea'
+    description: 'api key for xrea'
     required: true
 outputs:
 runs:
