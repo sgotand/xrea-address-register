@@ -1,4 +1,4 @@
-FROM curlimages/curl:7
+FROM curlimages/curl:latest
 
 LABEL "com.github.actions.name"="xrea address register"
 LABEL "com.github.actions.description"="this action register the ip address to xrea in order to enable acess to xrea from actions"
