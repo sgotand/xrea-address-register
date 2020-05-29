@@ -17,3 +17,5 @@ outputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - "${{ inputs.xrea_account }}"

@@ -3,7 +3,9 @@
 set -e
 
 address=$(curl -s ifconfig.me)
-
+echo $1
+echo ${INPUT_XREA_ACCOUNT}
+echo ${XREA_ACCOUNT}
 resp=$(curl -sS -X POST \
   -d "account=${INPUT_XREA_ACCOUNT}" \
   -d "server_name=${INPUT_XREA_SERVER}" \
