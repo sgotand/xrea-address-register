@@ -17,7 +17,3 @@ outputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - "${{ inputs.xrea_account }}"
-    - "${{ inputs.xrea_server }}"
-    - "${{ inputs.xrea_api_key }}"
