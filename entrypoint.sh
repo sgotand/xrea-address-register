@@ -32,4 +32,4 @@ resp=$(curl -sS -X POST \
   https://api.xrea.com/v1/tool/ssh_ip_allow)
 
 echo ${resp}
-echo ${resp} |grep '"status_code":200' >dev/null 2>/dev/null
+echo ${resp} |grep '"status_code":200' > /dev/null 2> /dev/null
