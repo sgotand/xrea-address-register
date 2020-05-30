@@ -1,4 +1,4 @@
-# xrea_address_register
+# xrea-address-register
 
 ## 概要
 APIでIPアドレス登録をすることで、XREAにgithub actionsからアクセス可能にするためのAction
